@@ -1,4 +1,4 @@
-# Copyright (C) 2007-2011 LuaDist.
+﻿# Copyright (C) 2007-2011 LuaDist.
 # Created by Peter Drahoš, Peter Kapec
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
@@ -140,6 +140,8 @@ target_link_libraries ( luac liblua_static )
 
 install_executable ( lua luac )
 install_library ( liblua )
+
+install_library ( liblua_static )
 install_data ( README COPYRIGHT HISTORY )
 install_lua_module ( strict etc/strict.lua )
 install_header (src/lua.h src/lualib.h src/lauxlib.h etc/lua.hpp ${CMAKE_CURRENT_BINARY_DIR}/luaconf.h  )
